@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>nichijouz</title>
+  <title>c++ learning notes 2 | nichijouz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="fight for future">
-<meta property="og:type" content="website">
-<meta property="og:title" content="nichijouz">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="1.关于c++函数函数原型即函数声明c++中函数原型参数为空即不接受参数eg.void fun(),而c中则是指不指定参数，若c++函数不指定参数应使用fun(…)声明函数指针eg.int (p)(int)，定义函数指针为p=fun;//注意没有括号，不然就是调用fun了；调用函数指针有两种方式，一种为(p)();另一种直接为p();//最好使用前一种，明显使用函数指针内联函数声明声明和定义都要使">
+<meta property="og:type" content="article">
+<meta property="og:title" content="c++ learning notes 2">
+<meta property="og:url" content="http://yoursite.com/2017/02/09/c-learning-notes-2/index.html">
 <meta property="og:site_name" content="nichijouz">
-<meta property="og:description" content="fight for future">
+<meta property="og:description" content="1.关于c++函数函数原型即函数声明c++中函数原型参数为空即不接受参数eg.void fun(),而c中则是指不指定参数，若c++函数不指定参数应使用fun(…)声明函数指针eg.int (p)(int)，定义函数指针为p=fun;//注意没有括号，不然就是调用fun了；调用函数指针有两种方式，一种为(p)();另一种直接为p();//最好使用前一种，明显使用函数指针内联函数声明声明和定义都要使">
+<meta property="og:updated_time" content="2017-02-12T13:33:16.849Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="nichijouz">
-<meta name="twitter:description" content="fight for future">
+<meta name="twitter:title" content="c++ learning notes 2">
+<meta name="twitter:description" content="1.关于c++函数函数原型即函数声明c++中函数原型参数为空即不接受参数eg.void fun(),而c中则是指不指定参数，若c++函数不指定参数应使用fun(…)声明函数指针eg.int (p)(int)，定义函数指针为p=fun;//注意没有括号，不然就是调用fun了；调用函数指针有两种方式，一种为(p)();另一种直接为p();//最好使用前一种，明显使用函数指针内联函数声明声明和定义都要使">
   
     <link rel="alternate" href="/atom.xml" title="nichijouz" type="application/atom+xml">
   
@@ -66,9 +67,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-c-learning-notes-2" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-c-learning-notes-2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/02/09/c-learning-notes-2/" class="article-date">
   <time datetime="2017-02-09T13:22:48.000Z" itemprop="datePublished">2017-02-09</time>
@@ -81,8 +80,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/09/c-learning-notes-2/">c++ learning notes 2</a>
+    <h1 class="article-title" itemprop="name">
+      c++ learning notes 2
     </h1>
   
 
@@ -112,93 +111,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-c-learning-notes-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/02/07/c-learning-notes-1/" class="article-date">
-  <time datetime="2017-02-07T10:50:24.000Z" itemprop="datePublished">2017-02-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/07/c-learning-notes-1/">c++ learning notes 1</a>
-    </h1>
+    <a href="/2017/02/07/c-learning-notes-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">c++ learning notes 1</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.main函数<br>int main()<br>{<br>    statements;<br>    return 0;<br>}<br>2.声明不分配内存空间，定义时才分配<br>3.可以使用sizeof函数查看类型占用字节，eg.sizeof(int);可以用库文件<climits>来查看编译器支持的数值范围，其包含的常量可直接输出，eg.INT_MAX,SHORT_MAX,LONG_MAX,etc<br>4.关于cout对象的函数<br>cout.put输出单字符<br>5.可使用八进制或十六进制或Unicode码来表示字符，以\开头<br>6.宽字符类型wchar_t,不过要用L前缀来表示，eg.wchar_t w=L’P’;<br>7.cout在输出数字时可以设置格式cout.setf(ios_base::fixed)以定点输出cout.setf(ios_base::showpoint)以小数格式输出，cout.precision(num)设置小数精度<br>7.关于const<br>const要声明时就给出定义，eg.const a=10;<br>8.c++中强制类型转换可以用(type)var或者type(var)<br>9.字符串数组的使用<br>eg.char s[2]={‘a’,’\0’}//这种形式必须要有’\0’，否则就不是字符串数组，当使用字符串处理函数时可能出错<br>eg.char s[3]=”ab”;<br>eg.char s[]=”hello”;//以上两种，’\0’会自动的加上<br>10.关于cin对象的函数<br>cin会保留换行符，eg.cin&gt;&gt;a;当输入数据并回车，回车会留在缓冲区，必要时需用cin.get消化掉<br>cin使用空白来界定字符串，eg.Hello c++将被当做两个字符串<br>cin.getline读取一行并丢弃换行符，eg.cin.getline(读入的数组名，要读进的字符数目+1）,被读进的数组里最后总是存放的’\0’<br>cin.get读取一行但不丢弃换行符，换行符仍然保留在缓冲区中.eg.cin.get(读入的数组名，要读入的字符数目+1）,但保留了换行符，可以使用cin.get()来消化掉这个换行符，所以可以连起来用cin.getline(Arr,Size).get();<br>cin.get还可也这样用,eg.c=cin.get();在c中使用c=getchar(),同样cout有cout.put(c),等价于c中的putchar(c)<br>当cin读取到空行或超出了分配的空间，则会设置失效位，将剩余的数据留在缓冲区，并拒绝以后的输入，必须用cin.clear清除失效位，可以使用cin作为判断输入是否正确的判断<br>11.关于string类的使用9<br>string类定义在std中<br>string拼接用+号，可以直接将str1赋值给str2，而在c中，需要使用strcpy(str2,str1),strcat(str2,str1)<br>string类有长度函数，str.size(),而在c中则使用strlen(str)函数<br>有一个单独的getline(cin,str)函数，用以将cin的输入读入str中<br>可以将string类进行比较，eg.str1!=”hello”.但是在c中必须用strcmp(str1,str2)<br>12.关于c++中的结构体<br>c++的结构体定义为struct name {…};声明时直接为 name var<br>而在c中，结构体定义为struct name{…};声明时为struct name var，若要省略struct则要用typedef struct name{…}new_name；声明时为new_name var<br>struct1可以被赋值给struct2<br>结构体中可使用位字段eg.strcut a{unsigned int SN:4;}使得SN占4位<br>13.关于c++中的枚举类型<br>定义枚举enum name {a,b,c},声明时为name var,var只可以取a或b或c，对应整数值0,1,2，name可以省略，可以直接使用a,b,c这三个enum型<br>可以更改enum默认取值eg.enum {a=1，b=2}；<br>枚举值为整型，但是不能自动转换int，不能对枚举型赋予int,但可以是enum1=enum2，最好不要讲枚举相加减，可能导致错误<br>14.关于c++中的指针<br>c++中的指针使用基本同c，但可以用new,eg.int <em>p=new int;开辟一个int大小的内存给指针p；若new无法分配内存，则会返回0并且引发bad_alloc异常<br>用new分配的内存指针需用delete删除,eg.delete p;<br>将new应用于数组时的方法，eg.int </em>p=new int[10],删除时必须用delete [] p;<br>数组名视作常量指针，指针加下标会自动解引用,eg.p[1]与<em>(p+1)等价<br>一般说来cout输出指针会以十六进制输出地址，但对于char指针，则会出书字符串<br>15.关于c++中延时函数<br>首先引入<ctime>，其中有一个CLOCK_PER_SECOND的常量<br>其次，clock()返回当前系统时间，返回类型为clock_t<br>因此延时delay定义为clock_t delay=秒数</ctime></em>CLOCK_PER_SECOND<br>16.关于eof<br>eof表示文件或者输入流结束，在windows中使用ctrl-z+回车模拟，linux中用ctrl-d模拟<br>检测eof使用cin.eof()或者cin.fail(),后者更加通用，因为遇到eof后,cin将failbit和eofbit都为1，因此必要时用cin.clear清除这两位<br>cin.get()可以捕捉到eof，所以可以使用cin.get()==EOF作为判断条件<br>17.关于c++中的字符函数库<br>字符函数库<cctype>,其中包含isalpha检测是否为字母，isdigits是否为数字，isspace是否为空字符或其他控制字符，ispunct是否为标点etc,具体参阅说明<br>18.关于switch语句<br>switch语句从读取到匹配的分支开始执行，如果没有break则会一直向后执行<br>19.关于c++中的文件处理<br>//输出到文件<br>首先要引入<fstream>,里面有一个ofstream类，使用时要先声明其变量，打开文件用open函数，关闭用close<br>eg.<br>ofstream file;//声明变量<br>file.open(“filename”);//“filename”可用一个字符串替代<br>double d;<br>d&gt;&gt;file;<br>file.close();<br>如果文件不存在则创建<br>//读取文件</fstream></cctype></climits></p>
-<p><fstream>里有一个ifstream类，使用时先声明其变量，仍然使用open函数和close函数<br>eg.<br>ifstream file;//声明变量<br>file.open(“filename”)//“filename”可用一个字符串替代<br>doube d;<br>file&gt;&gt;d;<br>file.close();<br>如果文件不存在将导致输入失败，应当用file.is_open来检测是否打开成功；file.good指出上一次读取操作是否发生了错误或者是否到了文件尾，也可用eof或fail函数具体检测原因</fstream></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/07/c-learning-notes-1/" data-id="ciz3pm95h0001zolmd3frgtsy" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/01/15/hello-world/" class="article-date">
-  <time datetime="2017-01-15T13:25:26.508Z" itemprop="datePublished">2017-01-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/15/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/15/hello-world/" data-id="ciz3pm95m0002zolmj8s3gpat" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
